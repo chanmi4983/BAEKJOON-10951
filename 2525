@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, sum; 
+  scanf("%d %d %d", &a, &b, &c);
+    //printf("%d시 %d분 \n", a, b);
+   // printf("요리하는 시간: %d\n", c);
+    //printf("%d %d", a, b);
+    //printf("%d", c);
+    sum = b + c; 
+  //scanf("%d", &cllk.)
+  
+  if(a>=0 && a<=23 && b>=0 && b<=59 && c>0 && c<=1000) { // 조건문을 이렇게 길게 써도 되나요 .. 
+    if(sum>=60){
+      //b = sum-60;
+      //scanf("%d", &a);
+      //scanf("%d", &b);
+      printf("%d %d\n", ++a, b+c-60);
+    } // 슬러쉬 엔이 너무 궁금 
+    else{
+      printf("%d시 %d분\n", a , sum);
+      }
+    }
+  return 0;
+}
