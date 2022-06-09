@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  int N; // 삼각형 줄 
+  scanf("%d", &N); // 변수 정의 
+  if(N>=1 && N<=100){ //조건 달성, 궁금한 점 .조건을 지키지 않았을 때 한 세트가 끝나는데 다시 어떻게 하게 만드는지.. 
+    for(int i=0; i<N; i++){ // 줄 바꾸기 
+      for(int j=0; j<N-i; j++){ // 공백 칸 
+        printf(" ");
+      }
+      for(int s = 1; s<=i+1; s++){ // 별 개수 
+    printf("*");
+        }
+      printf("\n");
+  }
+    }
+  return 0;
+}
+
+//다른 문제는 풀었는데 끝까지 고민중입니다.. 
