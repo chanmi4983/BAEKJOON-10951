@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  int count ; // 정수의 개수 
+  int max; // 최댓값 
+  int min; // 최솟값 
+  max = -1000000; // 최댓값 초기값 설정 
+  min = 1000000; // 최소값 설정
+  scanf("%d", &count); // 카운터로 선언 
+  if(count>=1 && count<=1000000){ // 조건 
+    int x[count]; // 정수의 개수 만큼 만들어냄
+    for(int i=0; i<count; i++){ // 배열 변수 
+        scanf("%d", &x[i]); // 요소 입력 
+    if(x[i]>=-1000000 && x[i]<=1000000){ 
+      if (x[i]>max) max=x[i]; // 설정해준 초기값에서 큰 
+      if (x[i]<min) min=x[i]; 
+      }
+    }
+    printf("%d %d\n", max, min);
+    }
+  return 0;
+}
